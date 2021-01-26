@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  /*border-radius:50px;*/
+   
+   font-weight: bold;
+   background: hsl(0, 87%, 3%);
+   color: white;
+   /*font-family: "Lato";
+      width: 6000px;
+    max-width: 100%;
+   margin: 0 5px 0 0;
+   /* border: 20px solid #212121;*/
+}
+
+
+
+
