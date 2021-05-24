@@ -79,9 +79,7 @@ function draw(){
     distance = distance + Math.round(getFrameRate()/60);
     path.velocityX = -(6 + 3*distance/100);
   
- //   if(keyDown("space") ) {
-    //  trex.velocityY = -12;
-    //}
+
      mainCyclist.y = World.mouseY;
      text("Distance: "+ distance, 500,50);
   
@@ -121,8 +119,7 @@ function draw(){
 
   }
   else if (gameState === END) {
-   // gameOver.visible = true;
-    //restart.visible = true;
+
     
     //set velcity of each game object to 0
     path.velocityX = 0;
@@ -140,16 +137,14 @@ function draw(){
   
     
     //change the trex animation
-  //  t.changeAnimation("collided",trex_collided);
+
     
     //set lifetime of the game objects so that they are never destroyed
     obstaclesGroup.setLifetimeEach(-1);
     PinkCG.setLifetimeEach(-1);
     YellowCG.setLifetimeEach(-1);
     RedCG.setLifetimeEach(-1);
-    //if(mousePressedOver(restart)) {
-      //reset();
-    //}
+
         fill("skyblue");
     stroke("skyblue");
     text("restartmessage", gameOver.x-140, gameOver.y + 42);
@@ -159,30 +154,12 @@ function draw(){
   
   
 
-   //creating continous opponent players 
-//var select_oppPlayer = Math.round(random(1,3));
-
-
-//if (World.frameCount % 150 == 0) {
-//if (select_oppPlayer == 1) { 
-
-//pinkCyclists();
-
-//}
-
-  //else {
-
-//yellowCyclists();
-//}
-//if(select_oppPlayer==2){
-   // redCyclists();
-  //}
  
 }
 
   drawSprites();
   text("Distance: "+ distance, 500,50);
-}
+
 
 
 
